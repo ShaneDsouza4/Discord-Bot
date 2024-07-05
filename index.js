@@ -1,5 +1,9 @@
 require('dotenv').config();
+const { connectToMongoDB } = require("./connection");
 const { Client, GatewayIntentBits } = require('discord.js');
+
+connectToMongoDB("mongodb://127.0.0.1:27017/urlShortener")
+.then(()=>console.log("MongoDB connected."));
 
 const client = new Client({ 
     intents: [//Permissions 
