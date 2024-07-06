@@ -1,6 +1,7 @@
 require('dotenv').config();
 const { connectToMongoDB } = require("./connection");
 const { Client, GatewayIntentBits } = require('discord.js');
+const { shortenURL } = require("./urlShortener")
 
 connectToMongoDB("mongodb://127.0.0.1:27017/urlShortener")
 .then(()=>console.log("MongoDB connected."));
@@ -13,16 +14,18 @@ const client = new Client({
     ] 
 }); 
 
-client.on('messageCreate', message =>{
-    //console.log(message.content);
+client.on('messageCreate', async message =>{
+    //console.log(message);
     if(message.author.bot){
         return;
     }
     else if(message.content.startsWith('create')){
         const url = message.content.split('create')[1];
         console.log(url);
+        const shortUrl = await shortenURL(url, message.author.username);
+        console.log(shortUrl)
         return message.reply({
-            content: "Generating Short ID for " + url
+            content: "Generated Short URL: " + shortUrl
         })
     }else{
         message.reply({
