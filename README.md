@@ -23,19 +23,19 @@ A custom Discord bot using Node.js and JavaScript to bring advanced features and
    \`\`\`
 
 2. Install dependencies:
-   \`\`\`bash
+   \`\`\`
    npm install
    \`\`\`
 
 3. Configure the bot by adding your Discord API token and other necessary configurations in the \`config.json\` file.
 
 4. Start the bot:
-   \`\`\`bash
+   \`\`\`
    node index.js
    \`\`\`
 
 ## Usage
 
-- Add the bot to your Discord server and interact with it using custom commands for URL shortening, database queries, and more.
+- Add the bot to your Discord server and interact with it using custom commands for URL shortening.
 
 
