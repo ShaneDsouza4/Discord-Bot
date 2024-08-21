@@ -1,6 +1,6 @@
 # Discord Bot
 
-A custom Discord bot using Node.js and JavaScript to bring advanced features and automation to a Discord server.
+A custom Discord bot using Node.js to provide seamless URL shortening functionality within Discord servers. The bot simplifies link sharing by converting long URLs into short, manageable links that can be easily shared and tracked.
 
 ## Project Highlights
 
@@ -9,10 +9,11 @@ A custom Discord bot using Node.js and JavaScript to bring advanced features and
 
 ## Key Contributions
 
-- **Node.js Powered**: Built the bot using Node.js, leveraging its asynchronous capabilities to handle multiple commands and tasks efficiently.
-- **Command Handling**: Designed the bot to process and execute various commands seamlessly within the server.
-- **Database Integration**: Connected the bot to a database to store and retrieve server data dynamically.
 - **URL Shortening Feature**: Implemented a URL shortening service within the bot to simplify link sharing.
+- **Command Handling**: Designed the bot to process and execute various commands seamlessly within the server.
+- **Node.js Powered**: Built the bot using Node.js, leveraging its asynchronous capabilities to handle multiple commands and tasks efficiently.
+- **Database Integration**: Connected the bot to a database to store and retrieve server data dynamically.
+
 
 ## Installation
 
